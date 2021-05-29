@@ -65,12 +65,24 @@
     "lastname": {
       "type": "string"
     },
-    "imagenes": {
+    "photos_user": {
+      "model": "foto-user",
+      "via": "user"
+    },
+    "images": {
       "collection": "imagenes",
       "via": "user"
     },
-    "foto_user": {
-      "model": "foto-user"
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

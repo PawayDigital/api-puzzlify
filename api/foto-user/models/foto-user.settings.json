@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "foto_users",
   "info": {
-    "name": "foto_user",
+    "name": "photos_users",
     "description": ""
   },
   "options": {
@@ -11,7 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "foto_user": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -19,6 +19,11 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "user": {
+      "via": "photos_user",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

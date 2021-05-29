@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "imagenes",
   "info": {
-    "name": "imagenes"
+    "name": "images",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,8 +11,8 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "descripcion": {
-      "type": "text"
+    "title": {
+      "type": "string"
     },
     "url": {
       "collection": "file",
@@ -23,11 +24,11 @@
       "required": false
     },
     "tags": {
-      "via": "imagenes",
+      "via": "images",
       "collection": "tags"
     },
     "user": {
-      "via": "imagenes",
+      "via": "images",
       "plugin": "users-permissions",
       "model": "user"
     }
