@@ -22,4 +22,5 @@ Aprendí a implementar un backend me una manera muy agil gracias a **Strapi**
 
 ## API Reference
 
-- [Endpoints](https://github.com/PawayDigital/puzzlify)
+- [Endpoints](https://github.com/PawayDigital/api-puzzlify/blob/main/Insomnia_api_puzzlify)
+- NOTA: El archivo de los endpoints importar a insomnia o postman
